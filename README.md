@@ -1,7 +1,7 @@
 # CNNTensorflow
  implement a convolutional neural network program in TensorFlow capable of learning the zener card images
 
-Your neural net training program will be run from the command line with a line like:
+neural net training program can be run from the command line with a line like:
 
 python conv_train.py cost network_description epsilon max_updates class_letter model_file_name train_folder_name 
 
@@ -23,8 +23,3 @@ This would specify a neural net with the following layers: the first two layers 
 
 You should train with 5-fold cross-validation. Your program should output a final average cost value for the training data (over the five different training sets) and a final average cost for the validation data (over the five different training sets). You can use the last trained model as what you write to disk. When you do testing with your trained model, use a different data set then what you used to train and validate with.
 
-Once you have written the above program, I would like you to design and conduct experiments which investigate the following:
-
-    Fix a network approximately like LeNet-5. If you plot max_updates versus training cost and validation cost does the validation cost ever reach a minimum? How does a lower validation cost affect accuracy on test data?
-    Start with a network approximately like LeNet-5. How does the choice of regularization effect the training convergence rate of your model?
-    Start with a network approximately like LeNet-5. What is the effect of increasing or decreasing the number of layers on training accuracy? What about varying feature size or number of features/layer?
